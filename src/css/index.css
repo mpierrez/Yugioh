@@ -8,8 +8,11 @@
   background-color: #EFEFEF;
 }
 
-header {
-  margin-bottom: 0.5em;
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #252525;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 *,
@@ -507,6 +510,7 @@ label {
   height: 100%; /* Hauteur de l'élément */
   background: linear-gradient(to right bottom, transparent 50%, #252525 50%); /* Crée un dégradé en forme de triangle rectangle */
 }
+
 
 @font-face {
   font-family: 'Matrix Regular Small Caps';

@@ -14,7 +14,7 @@ function Home()
             </div>
         </div>
         <div className='triangle-rectangle'>
-            <img src={character} height='550px'></img>
+            <img src={character}></img>
         </div>
     </div>)
 }

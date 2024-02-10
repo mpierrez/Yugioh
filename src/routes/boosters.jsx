@@ -4,6 +4,7 @@ import booster from "../img/booster.png"
 import BoosterCard from "./boosterCard";
 import * as api from "../api/api";
 import { useState } from "react";
+import sound from '../audio/open.mp3'
 
 function Boosters()
 {
@@ -32,7 +33,7 @@ function Boosters()
                   {
                     setClicked(true)
                     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                    const audio = new Audio("/open.mp3");
+                    const audio = new Audio(sound);
                     const source = audioContext.createMediaElementSource(audio);
                     source.connect(audioContext.destination);
                     audio.play();

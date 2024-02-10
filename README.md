@@ -1,12 +1,16 @@
 # Yugioh interactive website
 
-Ce site a pour but de manipuler l'[API publique de Yugioh](https://db.ygoprodeck.com/) pour permettre de nombreuses interractions avec cette dernière.
+Ce site interactif est une plateforme immersive dédiée aux passionnés de Yugioh, exploitant l'[API publique de Yugioh]((https://db.ygoprodeck.com/)) pour offrir une expérience riche et dynamique. Il propose une gamme complète de fonctionnalités permettant d'explorer et d'interagir avec l'univers des cartes Yugioh de manière innovante et divertissante.
 
 ## Fonctionnalités
 
-- Affichage des informations sur les cartes Yugioh (types, effets, descriptions, prix...)
-- Ouverture de boosters Yugioh, avec possibilité de partager les cartes obtenues
-- Création de cartes dynamiquement, avec des templates déjà mis en place
+- **Affichage détaillé des cartes Yugioh :** Obtenez des informations complètes sur les cartes, y compris leurs types, leurs effets, leurs descriptions, leurs prix et bien plus encore. Explorez la vaste collection de cartes Yugioh avec facilité et précision.
+- **Ouverture de boosters :** Vivez l'excitation de l'ouverture de boosters Yugioh virtuels. Obtenez des cartes aléatoires et partagez vos découvertes avec vos amis.
+- **Création de cartes personnalisées :** Exprimez votre créativité en créant des cartes Yugioh personnalisées. Utilisez des templates préconfigurés pour concevoir des cartes uniques et partagez-les avec la communauté.
+
+## Accéder au site
+
+Pour accéder au site, veuillez vous rendre sur [Yugioh interactive website](https://mpierrez.github.io/Yugioh/). Nous recommandons l'utilisation de Google Chrome pour une expérience optimale.
 
 ## Contribution
 
@@ -25,9 +29,9 @@ Todo
 * **Mathys PIERREZ** _alias_ [@m.pierrez](https://git.unistra.fr/m.pierrez)
 
 ## Versions
-**Dernière version :** 1.0.0
+**Dernière version :** 1.0.1
 
-**Dernière version stable :** 1.0.0
+**Dernière version stable :** 1.0.1
 
 ## Licence
 
