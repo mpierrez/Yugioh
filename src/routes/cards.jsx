@@ -19,8 +19,10 @@ function Cards() {
         <div id="cards">
                 <h1>Cards</h1>
                 <Form>
-                    <input id="search" name="search" type="text" placeholder="Veuillez entrer un nom ou identifiant de carte" style={{marginRight: '0.5em', width: '350px'}}></input>
-                    <button className="BaseButton" onClick={()=> {setShowCard(false); setSearching(true)}} disabled={isSearching}>{isSearching ? "Searching" : "Search"}</button>
+                    <div id="search-container">
+                        <input id="search" name="search" type="text" placeholder="Veuillez entrer un nom ou identifiant de carte"></input>
+                        <button className="BaseButton" onClick={()=> {setShowCard(false); setSearching(true)}} disabled={isSearching}>{isSearching ? "Searching" : "Search"}</button>
+                    </div>
                     <div style={{display: 'flex', justifyContent: 'center'}}>
                         <input type="radio" id="byName" name="filter" value="name" defaultChecked/>
                         <label htmlFor="byName">Rechercher par nom</label>
@@ -63,13 +65,24 @@ function Cards() {
                     </select>
                     <br/>
                 </Form>
+                <div id="details-responsive" hidden={!showCard || !(window.matchMedia("(max-width: 400px)").matches)}>
+                    <Outlet></Outlet>
+                </div>
                 {cards.length > 0 ? (
                     <nav>
                         <ul id="listCards">
                             {cards.map((card) => (
-                                <li key={card.id} style={{margin: 15}}>
+                                <li key={card.id}>
                                     <NavLinkWithQuery to={card.id} className={({ isActive, isPending }) => isActive ? 'active' : isPending ? 'pending' : 'not-active'}>
-                                        <img onClick={()=>setShowCard(true)} style={{height: 300}} src={card.card_images[0].image_url}/>
+                                        <img onClick={()=>{
+                                                setShowCard(true)
+                                                if(window.matchMedia("(max-width: 400px)").matches) {
+                                                    document.getElementById('details-responsive').scrollIntoView({ behavior: 'smooth' })
+                                                } else {
+                                                    document.getElementById('details').scrollIntoView({ behavior: 'smooth' })
+                                                }
+                                            }
+                                        } src={card.card_images[0].image_url}/>
                                     </NavLinkWithQuery>
                                 </li>
                             ))}
@@ -79,13 +92,9 @@ function Cards() {
                     <p>{searching ? "" : "Aucun résultat trouvé."}</p>
                 )}
         </div>
-          {showCard ?
-            <div id="details" style={{ transform: 'translateY(-50%)' }}>
-                <Outlet></Outlet>
-            </div> :
-              <></>
-          }
-
+        <div id="details" style={{ transform: 'translateY(-50%)' }} hidden={!showCard || (window.matchMedia("(max-width: 600px)").matches)}>
+            <Outlet></Outlet>
+        </div>
       </>
     );
   }

@@ -24,7 +24,7 @@ function BoosterCard({ onClick, card, flip }) {
         }
         handleFlip()
         
-      }} style={{ margin: '15px 15px 75px' }}>
+      }}>
         <div className="card-inner">
           <div className="card-front">
             {flip ? (

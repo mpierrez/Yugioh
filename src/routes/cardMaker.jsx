@@ -162,7 +162,7 @@ function CardMaker() {
         <p style={{margin: '1rem 3rem 1rem 3rem', textAlign: 'center'}}>Ici, vous avez l&apos;opportunité unique de concevoir vos propres cartes, ajoutant une dimension personnelle à votre collection. Explorez cette plateforme intuitive qui vous permet de personnaliser chaque détail de vos cartes, des caractéristiques aux illustrations. Concevez des créations uniques qui reflètent votre style de jeu et partagez-les avec la communauté Yu-Gi-Oh! Téléchargez vos cartes personnalisées et offrez une nouvelle dimension à vos duels dans le monde palpitant de Yu-Gi-Oh!</p>
       </div>
       <br/>
-      <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'white' }}>
+      <div id="card-maker" style={{ display: 'flex', alignItems: 'center', backgroundColor: 'white' }}>
         <form style={{marginLeft: '40px', marginRight: '40px'}} className='chakra-form'>
           <label>Nom: <Input type="text" name="name" value={cardInfo.name} onChange={handleChange}/></label>
           <br/>

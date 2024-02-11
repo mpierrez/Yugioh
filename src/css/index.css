@@ -47,6 +47,16 @@ h1 {
   font-size:1.5rem;
 }
 
+#cards-title {
+  margin: '0.75rem 3rem 0rem 3rem';
+  font-size: '2rem';
+}
+
+#cards-description {
+  margin: '1rem 3rem 1rem 3rem'; 
+  text-align: 'center';
+}
+
 #atkdef{
   margin-top: 20px;
   display: flex;
@@ -78,7 +88,7 @@ button {
 
 select, input {
   padding: 0.2rem 0.5rem;
-  margin-right: 0.5em;
+  margin-right: 5px;
 }
 
 .chakra-input, .chakra-form select {
@@ -166,9 +176,16 @@ ul {
 }
 
 #search, #name{
-  margin-bottom: 20px;
   border-radius:10px;
   height: 50px;
+  width: 75%;
+}
+
+#search-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #cardSpec{
@@ -221,7 +238,7 @@ ul {
   align-content: center;
 }
 
-#details {
+#details, #details-responsive {
   position: sticky;
   top:50%;
   padding:10px;
@@ -281,10 +298,13 @@ ul {
 }
 
 .homePage div {
+  display: flex;
+  justify-content: space-between;
   margin-left: 50px;
 }
 
 .homePage h2 {
+  text-align: center;
   margin: 0 0 50px 25px;
   color: #252525;
   line-height: 1.5em
@@ -294,8 +314,23 @@ img {
   height: 100%;
 }
 
+#cards form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 label {
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+canvas {
+  width: 555px;
+  height: 810px;
+}
+
+#cards p, #cards h1 {
+  text-align: center;
 }
 
                                                      /* CSS */
@@ -356,8 +391,6 @@ label {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
-  margin-top:10px;
-  margin-bottom: 10px;
   min-height: 0;
   min-width: 0;
   outline: none;
@@ -511,6 +544,93 @@ label {
   background: linear-gradient(to right bottom, transparent 50%, #252525 50%); /* Crée un dégradé en forme de triangle rectangle */
 }
 
+#listCards li {
+  margin: 15px;
+}
+
+li a img {
+  height: 300px;
+}
+
+li a {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #root>header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  header a h2 {
+    text-align: center;
+    margin: 5px;
+  }
+
+  .homePage, .homePage div {
+    flex-direction: column;
+  }
+
+  .homePage div {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .homePage h2 {
+    margin: 10px;
+  }
+
+  button {
+    margin: 0;
+  }
+
+  #root>header a {
+    display: block;
+    padding: 0;
+    width: 50%;
+  }
+
+  #cards-title {
+    margin: 0;
+  }
+
+  #cards-description {
+    margin: 10px;
+    text-align: center;
+  }
+
+  #listCards li a {
+    width: 100%
+  }
+
+  #listCards > li, #listCards > div {
+    flex: 50%;
+    margin-bottom: 10px;
+  }
+
+  #listCards li {
+    margin: 0;
+  }
+
+  #listCards div {
+    margin: 15px 0px 15px 0px;
+  }
+
+  #details-responsive {
+    position: static;
+  }
+
+  #card-maker {
+    flex-direction: column;
+  }
+
+  canvas {
+    width: 100%;
+  }
+
+}
 
 @font-face {
   font-family: 'Matrix Regular Small Caps';
