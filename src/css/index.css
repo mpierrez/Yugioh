@@ -299,6 +299,8 @@ ul {
 
 .homePage div {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin-left: 50px;
 }
