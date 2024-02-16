@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Yugioh/static/css/main.4840a82b.css",
+    "main.css": "/Yugioh/static/css/main.9cf6980b.css",
     "main.js": "/Yugioh/static/js/main.f103f318.js",
     "static/media/linkCard.png": "/Yugioh/static/media/linkCard.e9f71ebeb3d117718db2.png",
     "static/media/effectCard.png": "/Yugioh/static/media/effectCard.9bfd4d81091e416a23b2.png",
@@ -24,11 +24,11 @@
     "static/media/cardBack.jpg": "/Yugioh/static/media/cardBack.7e3101b346e6ad3724c3.jpg",
     "static/media/Matrix Regular Small Caps.ttf": "/Yugioh/static/media/Matrix Regular Small Caps.9956c71fc8fcccf6bc61.ttf",
     "index.html": "/Yugioh/index.html",
-    "main.4840a82b.css.map": "/Yugioh/static/css/main.4840a82b.css.map",
+    "main.9cf6980b.css.map": "/Yugioh/static/css/main.9cf6980b.css.map",
     "main.f103f318.js.map": "/Yugioh/static/js/main.f103f318.js.map"
   },
   "entrypoints": [
-    "static/css/main.4840a82b.css",
+    "static/css/main.9cf6980b.css",
     "static/js/main.f103f318.js"
   ]
 }
